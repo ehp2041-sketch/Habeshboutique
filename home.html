@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ti">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - DJ ENO Elite</title>
+    <style>
+        body {
+            padding: 0;
+            background: linear-gradient(-45deg, #000000,#1a1a1a,#0f0f0f,#000000);
+            background-image: url('/emmalogo.jpg'); /* እታ ወርቃዊት ስእሊ */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow: hidden;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+        }
+        nav a { color: #d4af37; text-decoration: none; font-weight: bold; text-transform: uppercase; }
+        .main-logo {
+            width: 300px;
+            animation: pulse 3s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px #d4af37); }
+            50% { transform: scale(1.05); filter: drop-shadow(0 0 30px #d4af37); }
+        }
+        .shop-btn {
+            margin-top: 40px;
+            padding: 15px 40px;
+            background: transparent;
+            border: 2px solid #d4af37;
+            color: #d4af37;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+        .shop-btn:hover { background: #d4af37; color: black; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="kids.html">Kids</a>
+        <a href="bahli.html">ባህላዊ</a>
+    </nav>
+    <img src="assets/emmalogo.jpg" alt="Logo" class="main-logo">
+    <button class="shop-btn" onclick="location.href='bahli.html'">START SHOPPING</button>
+</body>
+</html>
